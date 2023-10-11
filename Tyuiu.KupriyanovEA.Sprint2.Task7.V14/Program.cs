@@ -41,6 +41,10 @@ namespace Tyuiu.KupriyanovEA.Sprint2.Task7.V14
             Console.WriteLine("Введите координату Y: ");
             y = Convert.ToDouble(Console.ReadLine());
 
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+            Console.WriteLine("***************************************************************************");
+
             res = ds.CheckDotInShadedArea(x, y);
             if (res)
             {
@@ -51,9 +55,6 @@ namespace Tyuiu.KupriyanovEA.Sprint2.Task7.V14
                 Console.WriteLine("Точка не находится в зашрихованной области");
             }
 
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
-            Console.WriteLine("***************************************************************************");
             Console.ReadKey();
         }
     }
